@@ -1,0 +1,73 @@
+// BASIC STYLING CSS FILE
+@import './basic';
+
+// VARIABLES CSS FILE
+@import './variables';
+
+// FUNCTIONS CSS FILE
+@import './functions';
+
+body {
+  background-color: #fff;
+  color: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: yellow;
+  font-family: cursive;
+}
+
+.form {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin: 5px;
+
+  .input {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    border: solid 4px green;
+    color: green;
+
+    &::placeholder {
+      color: lightgray;
+      font-family: inherit;
+    }
+  }
+
+  .btn {
+    background-color: green;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    font-family: inherit;
+    width: 100%;
+    margin: 15px 0px;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    filter: brightness(1);
+    transition: filter 0.3s ease-in-out;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+
+  .score {
+    color: green;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+}
+
+h1 {
+  margin-bottom: 20px;
+}

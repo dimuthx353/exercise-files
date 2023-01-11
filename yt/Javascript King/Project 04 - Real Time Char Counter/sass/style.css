@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button,
+input {
+  cursor: pointer;
+}
+
+button,
+select,
+input {
+  font-family: inherit;
+  text-transform: capitalize;
+}
+
+::-moz-placeholder {
+  text-transform: capitalize;
+}
+
+:-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+::placeholder {
+  text-transform: capitalize;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.display-none {
+  display: none;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: salmon;
+  font-family: cursive;
+  color: #000;
+}
+
+.container {
+  background-color: lightpink;
+  width: 400px;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.container .textarea {
+  resize: none;
+  width: 100%;
+  height: 100px;
+  font-size: 18px;
+  font-family: sans-serif;
+  padding: 10px;
+  border: solid 2px darkgray;
+  color: #000;
+}
+.container .textarea::-moz-placeholder {
+  color: #000;
+}
+.container .textarea:-ms-input-placeholder {
+  color: #000;
+}
+.container .textarea::placeholder {
+  color: #000;
+}
+.container .counter-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+.container .counter-container p {
+  font-size: 18px;
+  color: grey;
+}
+.container .counter-container .total-counter {
+  color: slateblue;
+}
+.container .counter-container .remaning-counter {
+  color: orangered;
+}/*# sourceMappingURL=style.css.map */
