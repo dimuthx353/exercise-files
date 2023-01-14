@@ -1,0 +1,68 @@
+// BASIC STYLING CSS FILE
+@import './basic';
+
+// VARIABLES CSS FILE
+@import './variables';
+
+// FUNCTIONS CSS FILE
+@import './functions';
+
+body {
+  transition: 0.4s;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.label {
+  position: absolute;
+  width: 80px;
+  cursor: pointer;
+  height: 40px;
+  border-radius: 20px;
+  background-color: lightgrey;
+}
+
+.input {
+  visibility: hidden;
+}
+
+.circle {
+  position: absolute;
+  width: 34px;
+  background-color: white;
+  height: 34px;
+  top: 3px;
+  border-radius: 50%;
+  left: 3px;
+  animation: toggleOff 0.4s linear forwards;
+}
+
+.input:checked + .label {
+  background-color: #fff;
+}
+
+.input:checked + .label .circle {
+  animation: toggleOn 0.4s linear forwards;
+  background-color: #000;
+}
+
+@keyframes toggleOn {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(40px);
+  }
+}
+
+@keyframes toggleOff {
+  0% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

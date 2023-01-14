@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button,
+input {
+  cursor: pointer;
+}
+
+button,
+select,
+input {
+  font-family: inherit;
+  text-transform: capitalize;
+}
+
+::-moz-placeholder {
+  text-transform: capitalize;
+}
+
+:-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+::placeholder {
+  text-transform: capitalize;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.display-none {
+  display: none;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+body {
+  transition: 0.4s;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.label {
+  position: absolute;
+  width: 80px;
+  cursor: pointer;
+  height: 40px;
+  border-radius: 20px;
+  background-color: lightgrey;
+}
+
+.input {
+  visibility: hidden;
+}
+
+.circle {
+  position: absolute;
+  width: 34px;
+  background-color: white;
+  height: 34px;
+  top: 3px;
+  border-radius: 50%;
+  left: 3px;
+  -webkit-animation: toggleOff 0.4s linear forwards;
+          animation: toggleOff 0.4s linear forwards;
+}
+
+.input:checked + .label {
+  background-color: #fff;
+}
+
+.input:checked + .label .circle {
+  -webkit-animation: toggleOn 0.4s linear forwards;
+          animation: toggleOn 0.4s linear forwards;
+  background-color: #000;
+}
+
+@-webkit-keyframes toggleOn {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(40px);
+  }
+}
+
+@keyframes toggleOn {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(40px);
+  }
+}
+@-webkit-keyframes toggleOff {
+  0% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes toggleOff {
+  0% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}/*# sourceMappingURL=style.css.map */
